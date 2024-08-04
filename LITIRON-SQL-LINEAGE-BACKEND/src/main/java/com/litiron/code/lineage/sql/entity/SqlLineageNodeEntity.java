@@ -1,0 +1,31 @@
+package com.litiron.code.one.sql.entity;
+
+import lombok.Getter;
+import lombok.Setter;
+import org.springframework.data.neo4j.core.schema.GeneratedValue;
+import org.springframework.data.neo4j.core.schema.Id;
+import org.springframework.data.neo4j.core.schema.Node;
+import org.springframework.data.neo4j.core.schema.Property;
+
+/**
+ * @description: 结点信息
+ * @author: Litiron
+ * @create: 2024-07-02 22:00
+ **/
+@Node(labels = "表信息")
+@Getter
+@Setter
+public class SqlLineageNodeEntity {
+
+    /**
+     * 唯一的id 由neo4j自动生成，应该也可以自定义
+     */
+    @Id
+    @GeneratedValue
+    private Long id;
+
+    @Property(value = "tableName")
+    private String tableName;
+
+    private String schema;
+}
