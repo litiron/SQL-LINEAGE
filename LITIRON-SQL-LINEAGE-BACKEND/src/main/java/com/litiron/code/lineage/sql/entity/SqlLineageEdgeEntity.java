@@ -1,4 +1,4 @@
-package com.litiron.code.one.sql.entity;
+package com.litiron.code.lineage.sql.entity;
 
 import org.springframework.data.neo4j.core.schema.Node;
 import org.springframework.data.neo4j.core.schema.Relationship;

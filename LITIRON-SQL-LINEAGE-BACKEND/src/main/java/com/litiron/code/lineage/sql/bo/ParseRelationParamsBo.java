@@ -1,4 +1,4 @@
-package com.litiron.code.one.sql.bo;
+package com.litiron.code.lineage.sql.bo;
 
 import lombok.Getter;
 import lombok.Setter;

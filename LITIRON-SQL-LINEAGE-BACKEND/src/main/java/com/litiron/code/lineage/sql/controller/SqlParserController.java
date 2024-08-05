@@ -1,9 +1,8 @@
-package com.litiron.code.one.sql.controller;
+package com.litiron.code.lineage.sql.controller;
 
-import com.litiron.code.common.Rest;
-import com.litiron.code.one.sql.bo.ParseRelationParamsBo;
-import com.litiron.code.one.sql.dto.ParsedTableMeta;
-import com.litiron.code.one.sql.service.SqlLineageService;
+import com.litiron.code.lineage.sql.common.Rest;
+import com.litiron.code.lineage.sql.dto.ParsedTableMeta;
+import com.litiron.code.lineage.sql.service.SqlLineageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -22,7 +21,7 @@ public class SqlParserController {
     private SqlLineageService sqlLineageService;
 
     @PostMapping("/parse/relation/table")
-    public Rest<ParsedTableMeta> parseRelationTables(@RequestBody ParseRelationParamsBo parseRelationParamsBo) {
+    public Rest<ParsedTableMeta> parseRelationTables(@RequestBody com.litiron.code.lineage.sql.bo.ParseRelationParamsBo parseRelationParamsBo) {
         ParsedTableMeta parsedTableMeta = sqlLineageService.parseRelationTables(parseRelationParamsBo.getSql());
         return Rest.success(parsedTableMeta);
     }

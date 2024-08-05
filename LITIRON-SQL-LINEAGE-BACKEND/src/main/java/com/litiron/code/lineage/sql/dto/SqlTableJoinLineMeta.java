@@ -1,4 +1,4 @@
-package com.litiron.code.one.sql.dto;
+package com.litiron.code.lineage.sql.dto;
 
 import lombok.Getter;
 import lombok.Setter;

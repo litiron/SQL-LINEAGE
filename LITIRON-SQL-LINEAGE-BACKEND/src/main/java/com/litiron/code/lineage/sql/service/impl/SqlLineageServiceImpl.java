@@ -1,15 +1,14 @@
-package com.litiron.code.one.sql.service.impl;
+package com.litiron.code.lineage.sql.service.impl;
 
 import com.alibaba.druid.DbType;
 import com.alibaba.druid.sql.SQLUtils;
 import com.alibaba.druid.sql.ast.SQLStatement;
 import com.alibaba.druid.sql.dialect.postgresql.visitor.PGSchemaStatVisitor;
 import com.alibaba.druid.stat.TableStat;
-import com.litiron.code.one.sql.dao.SqlLineageNodeRepository;
-import com.litiron.code.one.sql.dto.ParsedTableMeta;
-import com.litiron.code.one.sql.dto.SqlTableJoinLineMeta;
-import com.litiron.code.one.sql.dto.SqlTableNodeMeta;
-import com.litiron.code.one.sql.service.SqlLineageService;
+import com.litiron.code.lineage.sql.dao.SqlLineageNodeRepository;
+import com.litiron.code.lineage.sql.dto.ParsedTableMeta;
+import com.litiron.code.lineage.sql.dto.SqlTableJoinLineMeta;
+import com.litiron.code.lineage.sql.service.SqlLineageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

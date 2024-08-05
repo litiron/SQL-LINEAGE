@@ -1,4 +1,4 @@
-package com.litiron.code.one.sql.config;
+package com.litiron.code.lineage.sql.config;
 
 import org.neo4j.cypherdsl.core.renderer.Dialect;
 import org.springframework.context.annotation.Configuration;

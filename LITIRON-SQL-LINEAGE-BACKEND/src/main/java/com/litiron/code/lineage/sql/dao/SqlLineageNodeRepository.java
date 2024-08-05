@@ -1,6 +1,6 @@
-package com.litiron.code.one.sql.dao;
+package com.litiron.code.lineage.sql.dao;
 
-import com.litiron.code.one.sql.entity.SqlLineageNodeEntity;
+import com.litiron.code.lineage.sql.entity.SqlLineageNodeEntity;
 import org.springframework.data.neo4j.repository.Neo4jRepository;
 import org.springframework.stereotype.Repository;
 

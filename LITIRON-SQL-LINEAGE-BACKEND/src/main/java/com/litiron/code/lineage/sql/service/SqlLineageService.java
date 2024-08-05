@@ -1,6 +1,6 @@
-package com.litiron.code.one.sql.service;
+package com.litiron.code.lineage.sql.service;
 
-import com.litiron.code.one.sql.dto.ParsedTableMeta;
+import com.litiron.code.lineage.sql.dto.ParsedTableMeta;
 
 /**
  * @description: sql 血缘关系相关服务
@@ -14,7 +14,7 @@ public interface SqlLineageService {
      * @Description: 解析sql中涉及的表信息
      * @Author: Litiron
      * @Date: 2024/6/15 19:32
-     * @return: com.litiron.code.one.sql.dto.ParsedTableMeta
+     * @return: com.litiron.code.lineage.sql.dto.ParsedTableMeta
      **/
     ParsedTableMeta parseRelationTables(String sql);
 
