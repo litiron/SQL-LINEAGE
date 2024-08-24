@@ -1,7 +1,6 @@
 package com.litiron.code.lineage.sql.entity;
 
 import org.springframework.data.neo4j.core.schema.Node;
-import org.springframework.data.neo4j.core.schema.Relationship;
 import org.springframework.data.neo4j.core.schema.RelationshipId;
 import org.springframework.data.neo4j.core.schema.TargetNode;
 
@@ -14,7 +13,7 @@ import org.springframework.data.neo4j.core.schema.TargetNode;
 public class SqlLineageEdgeEntity {
 
     @RelationshipId
-    private Long id;
+    private String id;
 
 
     private SqlLineageNodeEntity from;

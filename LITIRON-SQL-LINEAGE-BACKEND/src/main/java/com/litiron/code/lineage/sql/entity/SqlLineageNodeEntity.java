@@ -22,7 +22,7 @@ public class SqlLineageNodeEntity {
      */
     @Id
     @GeneratedValue
-    private Long id;
+    private String id;
 
     @Property(value = "tableName")
     private String tableName;
