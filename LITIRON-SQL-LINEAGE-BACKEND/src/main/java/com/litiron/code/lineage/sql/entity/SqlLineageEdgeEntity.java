@@ -16,9 +16,9 @@ public class SqlLineageEdgeEntity {
     @RelationshipId
     private Long id;
 
-
-    private SqlLineageNodeEntity from;
-
+    /**
+     * 目标结点
+     */
     @TargetNode
     private SqlLineageNodeEntity to;
 
