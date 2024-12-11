@@ -15,7 +15,7 @@ public class Rest<T> {
     /**
      * 数据总数
      */
-    private int count;
+    private Long count;
 
     /**
      * 消息
@@ -36,7 +36,7 @@ public class Rest<T> {
         this.data = data;
     }
 
-    public Rest(int code, String message, T data, int count) {
+    public Rest(int code, String message, T data, Long count) {
         this.code = code;
         this.message = message;
         this.data = data;
@@ -62,7 +62,7 @@ public class Rest<T> {
         return new Rest<>(200, message, data);
     }
 
-    public static <T> Rest<T> success(T data, int count) {
+    public static <T> Rest<T> success(T data, Long count) {
         return new Rest<>(200, null, data, count);
     }
 
@@ -95,11 +95,11 @@ public class Rest<T> {
         this.code = code;
     }
 
-    public int getCount() {
+    public Long getCount() {
         return count;
     }
 
-    public void setCount(int count) {
+    public void setCount(Long count) {
         this.count = count;
     }
 
